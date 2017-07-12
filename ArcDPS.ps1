@@ -21,6 +21,6 @@ If ($TestPath_ArcDPS_Backup -eq $True) {
 Else { 
         If ($TestPath_ArcDPS_Backup -eq $False) { 
             Invoke-WebRequest "http://www.deltaconnected.com/arcdps/x64/d3d9.dll" -OutFile $ArcDPS
-            Write-Host $Failure
+            Write-Host "Successfully installed ArcDPS"
         }
 }
